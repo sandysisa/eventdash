@@ -21,12 +21,11 @@ public class EventoController {
 	public ArrayList<Evento> recuperarTodos(@RequestParam(name="ini") String ini, @RequestParam(name="fim") String fim){
 		ArrayList<Evento> lista;
 		LocalDate inicio = LocalDate.parse(ini);
-		LocalDate dtFim = LocalDate.parse(fim);
+		LocalDate dtFim  = LocalDate.parse(fim);
 		
-		lista = (ArrayList<Evento>)dao.findAllByDataEvento(inicio,dtFim);
+		lista = dao.findAllByDataEventoBetween(inicio, dtFim);
 		
 		return lista;
-		
 	}
 
 }

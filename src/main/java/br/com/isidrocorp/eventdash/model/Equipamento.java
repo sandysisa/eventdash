@@ -12,7 +12,7 @@ import javax.persistence.Table;
 public class Equipamento {
 	
 	@Id
-	@Column(name="id_equipamento")
+	@Column(name="id_equip")
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
 	

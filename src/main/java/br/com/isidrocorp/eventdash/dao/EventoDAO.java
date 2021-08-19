@@ -8,7 +8,5 @@ import org.springframework.data.repository.CrudRepository;
 import br.com.isidrocorp.eventdash.model.Evento;
 
 public interface EventoDAO extends CrudRepository<Evento, Integer>{
-	public ArrayList<Evento> findAllByDataEvento(LocalDate inicio, LocalDate fim);
-	
-
+	public ArrayList<Evento> findAllByDataEventoBetween(LocalDate inicio, LocalDate fim);
 }

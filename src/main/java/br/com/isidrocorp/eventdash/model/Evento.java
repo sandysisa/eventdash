@@ -12,23 +12,23 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="itmn_evento")
+@Table(name = "itmn_evento")
 public class Evento {
 	
 	@Id
-	@Column(name="id_evento")
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "num_seq")
 	private int numSeq;
 	
-	@Column(name="data_evt")
+	@Column(name = "data_evt")
 	private LocalDate dataEvento;
 	
 	@ManyToOne
-	@JoinColumn(name="id_alarme")
+	@JoinColumn(name = "id_alarme")
 	private Alarme alarme;
 	
 	@ManyToOne
-	@JoinColumn(name="id_equip")
+	@JoinColumn(name = "id_equip")
 	private Equipamento equipamento;
 
 	public int getNumSeq() {
@@ -62,6 +62,7 @@ public class Evento {
 	public void setEquipamento(Equipamento equipamento) {
 		this.equipamento = equipamento;
 	}
+	
 	
 
 }
