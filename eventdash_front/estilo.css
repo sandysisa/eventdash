@@ -10,14 +10,26 @@ h4{
 table {
     border-collapse: collapse;
     width: 100%;
-  }
+}
 
-  td, th {
-    border: 2px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-  }
+td, th {
+  border: 2px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
 
-  tr:nth-child(even) {
-    background-color: #dddddd;
-  } 
+.FAIL_LINK{
+    background-color: #F59187;
+}
+.CONNECT_ERR{
+    background-color: #EEAA7B;
+}	
+.UPLOAD_FAIL{
+    background-color: #66B9BF;
+}	
+.ABRUPT_INTERRUPTION{
+    background-color: #7FB58F;
+}
+.EVENT_UNKNOWN{
+    background-color: cornflowerblue;
+}

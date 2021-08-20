@@ -28,7 +28,7 @@ function preencheTabela(listaAlarmes){
     for (i=0; i<listaAlarmes.length; i++){
         let alarme = listaAlarmes[i];
 
-        strTabela = strTabela + `<tr>
+        strTabela = strTabela + `<tr class="${alarme.nome}">
                                      <td> ${alarme.nome} </td>
                                      <td> ${alarme.descricao} </td>
                                  </tr>`; 

@@ -33,7 +33,7 @@ function preencheTabela(listaEventos){
     for (i=0; i<listaEventos.length; i++){
         let evento = listaEventos[i];
 
-        strTabela = strTabela + `<tr>
+        strTabela = strTabela + `<tr class="${evento.alarme.nome}">
                                      <td class="text-center"> ${evento.numSeq} </td>
                                      <td class="text-center"> ${evento.dataEvento} </td>
                                      <td class="text-center"> ${evento.alarme.nome} </td>
