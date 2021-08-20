@@ -1,7 +1,6 @@
 function gerarAlarme(){
-    var IdAlarme = document.getElementById("txtNomeAlarme").value;
 
-    var url = "http://localhost:8080/eventos?nome="+IdAlarme;
+    var url = "http://localhost:8080/alarme";
 
     fetch(url).then(res => res.json()).then(listaAlarmes => preencheTabela(listaAlarmes));
 
@@ -19,7 +18,6 @@ function preencheTabela(listaAlarmes){
     console.log(listaAlarmes);
     var strTabela = `<table class="table">
                         <thead>
-                            <th> id </th>
                             <th> nome </th>
                             <th> descricao </th>
                         </thead> 
@@ -31,7 +29,6 @@ function preencheTabela(listaAlarmes){
         let alarme = listaAlarmes[i];
 
         strTabela = strTabela + `<tr>
-                                     <td> ${alarme.id} </td>
                                      <td> ${alarme.nome} </td>
                                      <td> ${alarme.descricao} </td>
                                  </tr>`; 
@@ -41,6 +38,6 @@ function preencheTabela(listaAlarmes){
     strTabela = strTabela + `   </tbody>
                              </table>`;
     
-    document.getElementById("alarme").innerHTML = strTabela;
+    document.getElementById("relatorio").innerHTML = strTabela;
 
 }
