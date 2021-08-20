@@ -18,13 +18,13 @@ function gerarRelatorio(){
 
 function preencheTabela(listaEventos){
     console.log(listaEventos);
-    var strTabela = `<table class="table">
+    var strTabela = `<br> <table class="table">
                         <thead>
-                            <th> numSeq </th>
-                            <th> data </th>
-                            <th> Alarme </th>
-                            <th> Hostname </th>
-                            <th> IP </th>
+                            <th class="text-center"> Número da Sequência </th>
+                            <th class="text-center"> Data </th>
+                            <th class="text-center"> Alarme </th>
+                            <th class="text-center"> Hostname </th>
+                            <th class="text-center"> IP </th>
                         </thead> 
                         
                         <tbody> `;
@@ -34,11 +34,11 @@ function preencheTabela(listaEventos){
         let evento = listaEventos[i];
 
         strTabela = strTabela + `<tr>
-                                     <td> ${evento.numSeq} </td>
-                                     <td> ${evento.dataEvento} </td>
-                                     <td> ${evento.alarme.nome} </td>
-                                     <td> ${evento.equipamento.hostname} </td>
-                                     <td> ${evento.equipamento.ipaddr} </td>
+                                     <td class="text-center"> ${evento.numSeq} </td>
+                                     <td class="text-center"> ${evento.dataEvento} </td>
+                                     <td class="text-center"> ${evento.alarme.nome} </td>
+                                     <td class="text-center"> ${evento.equipamento.hostname} </td>
+                                     <td class="text-center"> ${evento.equipamento.ipaddr} </td>
                                  </tr>`; 
 
     }
