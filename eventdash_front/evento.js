@@ -49,3 +49,8 @@ function preencheTabela(listaEventos){
     document.getElementById("relatorio").innerHTML = strTabela;
 
 }
+
+function logout(){
+    localStorage.removeItem("userDASH");
+    window.location = "index.html"
+}
