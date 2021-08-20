@@ -12,24 +12,23 @@ body {
 }
 
 .mbutton {
-	box-shadow: 0px 1px 0px 0px #fff6af;
-	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
-	background-color:#ffec64;
+	box-shadow: 0px 1px 0px 0px #000000;
+	background:linear-gradient(to bottom, #062f4f 5%, #0c558d 100%);
+	background-color:#0c558d;
 	border-radius:6px;
-	border:1px solid #ffaa22;
+	border:1px solid #062f4f;
 	display:inline-block;
 	cursor:pointer;
-	color:#333333;
+	color:#fff;
 	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
+	font-size:15px;	
 	padding:6px 24px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #ffee66;
+	text-shadow:0px 1px 0px #0c558d;
     }
     .mbutton:hover {
-        background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
-        background-color:#ffab23;
+        background:linear-gradient(to bottom, #e37222 5%, #ffec64 100%);
+        background-color:#e37222;
     }
     .mbutton:active {
         position:relative;
