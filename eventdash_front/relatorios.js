@@ -15,7 +15,6 @@ function carregaInfo(){
                                                     <b>RACF: </b>"${user.racf}"<br>
                                                     <b>Email: </b>"${user.email}"<br>
                                                     <b>Departamento:</b>"${user.departamento}"<br>
-                                                    <button type="button" class="btn btn-primary" onclick="logout()">Logout</button>
     `;
 }
 
